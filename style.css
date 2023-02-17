@@ -1,0 +1,35 @@
+.container{
+    width: 100vw;
+    height: 700px;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    top: 290px;
+    left: 290px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:azure;
+    margin: 0 auto;
+    animation-name: grow;
+    animation-duration: 1.4s;
+    /* animation-direction: alternate-reverse; */
+    animation-iteration-count: 5;
+}
+
+@keyframes grow {
+    0%{
+        top: 290px;
+    }
+    
+    50%{
+        top: 100px
+    }
+
+    100%{
+        top: 290px
+    }
+}
